@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <script src="script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>Javascript pode trocar imagens</h1>
-    <img id="myImage"  onclick="changeImage()" src="BulbOff.png" width="100" height="180">
-    <p>Clique na lâmpada para acendê-la ou apagá-la.</p>
 
-    <script>
-        function changeImage() {
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl">
+        <h1>Javascript pode trocar imagens</h1>
+        <img id="myImage" onclick="changeImage()" src="BulbOff.png" width="100" height="180">
+        <p>Clique na lâmpada para acendê-la ou apagá-la.</p>
+
+        <script>
+          function changeImage() {
             var image = document.getElementById('myImage');
             if (image.src.match('BulbOff')) {
-                image.src = 'BulbOn.png';
+              image.src = 'BulbOn.png';
             } else {
-                image.src = 'BulbOff.png';
+              image.src = 'BulbOff.png';
             }
-        }
-    </script>
+          }
+        </script>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
