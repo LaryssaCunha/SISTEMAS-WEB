@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções JavaScript</title>
+</head>
+<body>
+  <h1>Reprodução das Funções JavaScript</h1>
+
+  <h2>1. Sequência de Fibonacci</h2>
+  <p>Para calcular a sequência de Fibonacci até um valor máximo, utilize a função sequenciaFibonacci(maximo).</p>
+  <p>Exemplo de uso: <span id="fibonacci"></span></p>
+
+  <h2>2. Números Perfeitos no Intervalo</h2>
+  <p>Para calcular todos os números perfeitos em um intervalo, utilize a função numerosPerfeitosNoIntervalo(inicio, fim).</p>
+  <p>Exemplo de uso: <span id="perfeitos"></span></p>
+
+  <h2>3. Verificar se um Número é Primo</h2>
+  <p>Utilize a função ehNumeroPrimo(num) para verificar se um número é primo.</p>
+  <p>Exemplo de uso: <span id="primo"></span></p>
+
+  <h2>4. Calcular o Fatorial de um Número</h2>
+  <p>Para calcular o fatorial de um número inteiro, utilize a função fatorial(num).</p>
+  <p>Exemplo de uso: <span id="fatorial"></span></p>
+
+  <h2>5. Verificar se os Valores Podem Formar um Triângulo</h2>
+  <p>Utilize a função tipoTriangulo(a, b, c) para verificar se três valores podem formar um triângulo e qual tipo de triângulo é.</p>
+  <p>Exemplo de uso: <span id="triangulo"></span></p>
+
+  <h2>6. Multiplicação de Matrizes 3x3</h2>
+  <p>Para multiplicar duas matrizes 3x3, utilize a função multiplicarMatrizes(matriz1, matriz2).</p>
+  <p>Exemplo de uso: <span id="matrizes"></span></p>
+
+  <h2>7. Verificar se um Número de CPF é Válido</h2>
+  <p>Utilize a função ehCPFValido(cpf) para verificar se um número de CPF é válido.</p>
+  <p>Exemplo de uso: <span id="cpf"></span></p>
+
+  <script src="script.js"></script>
+  <script>
+    // Exemplos de uso das funções para o tutorial
+    document.getElementById("fibonacci").textContent = sequenciaFibonacci(100);
+    document.getElementById("perfeitos").textContent = numerosPerfeitosNoIntervalo(1, 1000);
+    document.getElementById("primo").textContent = ehNumeroPrimo(17);
+    document.getElementById("fatorial").textContent = fatorial(5);
+    document.getElementById("triangulo").textContent = tipoTriangulo(3, 4, 5);
+    const matrizA = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    const matrizB = [[9, 8, 7], [6, 5, 4], [3, 2, 1]];
+    document.getElementById("matrizes").textContent = multiplicarMatrizes(matrizA, matrizB);
+    document.getElementById("cpf").textContent = ehCPFValido("123.456.789-09");
+  </script>
+</body>
+</html>

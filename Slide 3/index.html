@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script src="script.js"></script>
+</head>
+<body>
+    <h1>Javascript pode trocar imagens</h1>
+    <img id="myImage"  onclick="changeImage()" src="BulbOff.png" width="100" height="180">
+    <p>Clique na lâmpada para acendê-la ou apagá-la.</p>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match('BulbOff')) {
+                image.src = 'BulbOn.png';
+            } else {
+                image.src = 'BulbOff.png';
+            }
+        }
+    </script>
+</body>
+
+</html>
